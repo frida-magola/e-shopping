@@ -1,0 +1,22 @@
+// material custom theme
+@import "~@angular/material/_theming";
+
+@include mat-core();
+
+// Define custom theme
+$app-primary: mat-palette($mat-blue, 700);
+$app-accent: mat-palette($mat-yellow, 800);
+$app-warn: mat-palette($mat-red);
+
+$app-theme: mat-light-theme($mat-blue, $mat-yellow, $mat-red);
+
+@include angular-material-theme($app-theme);
+
+//  Define custom typography
+$app-typography: mat-typography-config(
+  $headline: mat-typography-level(35px, 32px, 600),
+);
+@include angular-material-typography($app-typography);
+
+// our own custom  e-shopping style
+@import "scss/main";

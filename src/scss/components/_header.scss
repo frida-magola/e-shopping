@@ -1,0 +1,45 @@
+// custome style
+.e-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: var(--primay);
+  color: var(--white);
+  font-weight: 400;
+
+  &__logo {
+    cursor: pointer;
+    margin: 0 16px;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__nav {
+    display: flex;
+    height: 100%;
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        display: inline-block;
+        padding-right: 20px;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+        &.mat-dropdown {
+          display: flex;
+          align-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

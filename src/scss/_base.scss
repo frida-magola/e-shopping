@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 75%; //represent 12px = 1rem
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.e-content {
+  display: flex;
+  margin: 8rem auto 3.2rem;
+  padding: 0 1.6rem;
+  max-width: $max-width;
+  flex-direction: column;
+  align-items: flex-start;
+}
